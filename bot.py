@@ -10,7 +10,7 @@ client = MongoClient("mongodb+srv://really651:K4vSnRMEsZhqsTqS@cluster0.pxc2foz.
 db = client["GraphicsBot"]
 collection = db["graphicsbot"]
 
-bot = telebot.TeleBot("6019916299:AAGdNbTE5Zzij4qv105Ll6vkn9IGJ6MqPhM")
+bot = telebot.TeleBot("5968331247:AAHUpHFXoplOvMULiiFcjtFlyvAvpNTgpDQ")
 
 ITEMS_PER_PAGE = 1
 
@@ -27,7 +27,7 @@ key.add(a4, a5)
 key.add(a6)
 
 def check_sub(message):
-	if bot.get_chat_member("@mt_projectz", message.from_user.id).status != 'left':
+	if bot.get_chat_members("@abelgraphics", message.from_user.id).status != 'left':
 		return True
 	else:
 		return False
